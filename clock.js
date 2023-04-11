@@ -35,18 +35,18 @@ function tick() {
   }
 
   document.getElementById("date_header").innerHTML =
-    "TELEBIOARXIV " + 
+    "<span class='hidespan'>TELEBIOARXIV</span> " + 
     days[currTime.getDay()] +
     " " +
     currTime.getDate() +
     " " +
     months[currTime.getMonth()] +
-    " " +
+    " <span class='hidespan'>" +
     currHour +
     ":" +
     currMin +
     ":" +
-    currTime.getSeconds().toString().padStart(2,'0');
+    currTime.getSeconds().toString().padStart(2,'0') + "</span>";
 }
 
 var secondCheck = setInterval(tick, 1000);
@@ -115,6 +115,16 @@ function getBioArxivArticles(){
       html: items.join("")
     }).appendTo("#contents");
 
+    // set #loading to display none
+    $('#loading').text("")
+
+  // Save #index_view as page 100
+  // set timeout to do this so the above has time to work
+  setTimeout(function(){ 
+    telPages[100] = $('#index_view').html();
+    setPage(100);
+  }, 500)
+
     // Now add the full text view to telPages
     pageN = 199;
     $.each(data.collection, function(key, value) {
@@ -142,12 +152,6 @@ function getBioArxivArticles(){
 
 
 
-  // Save #index_view as page 100
-  // set timeout to do this so the above has time to work
-  setTimeout(function(){ 
-    telPages[100] = $('#index_view').html();
-    setPage(100);
-  }, 500)
 
   });
 

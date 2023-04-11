@@ -113,6 +113,15 @@ hr {
   #header, #main, #footer {
     width:100%;
   }
+
+  #header, #footer {
+    letter-spacing: 0px;
+  }
+
+  .hidespan{
+    display:none;
+  }
+
 }
 
 
