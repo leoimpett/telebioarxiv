@@ -123,7 +123,10 @@ function getBioArxivArticles(){
       // make sure they are not teh same integer
       const articlePage = ` <h1 class="top_header ${value.category.replace(" ","")}"> ${value.category} </h1>
       <div id="article_box" >
-      <h2> ${value.title} </h2>
+
+
+
+      <h2> <a href="https://doi.org/${value.doi}" target="_blank"> ${value.title} </a> </h2>
       <h3 id="article_header" >${value.authors}</h3>
       <h4> ${value.author_corresponding_institution} </h4><hr>
       <div id="article_contents">
