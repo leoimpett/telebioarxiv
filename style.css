@@ -1,0 +1,257 @@
+@font-face {
+  font-family: ttmono;
+  src: url(fonts/3x3mono.ttf);
+}
+@font-face {
+  font-family: pixtile;
+  src: url(fonts/pixtile.ttf);
+}
+@font-face {
+  font-family: wayf;
+  src: url(fonts/wayf.ttf);
+}
+
+
+body {
+  background-color:black;
+  color:#ffffff;
+  font-family: 'Press Start 2P', monospace;
+}
+
+#main, #header, #footer {
+  width:850px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#header, #footer {
+  /* text-align:right; */
+  letter-spacing: 5px;
+}
+
+#page_number{
+  float:left;
+  color:#00ff00;
+}
+
+#date_header{
+  float: right;
+}
+
+.top_header{
+  font-family: wayf;
+  letter-spacing: 0.1px;
+}
+
+#main {
+  min-height:730px;
+}
+
+.listleft, .listright {
+  float:left;
+  margin:5px 0px;
+}
+
+.listleft {
+  width:90%;
+  color:#00ffff;
+}
+
+.listright {
+  width:10%;
+  text-align:right;
+}
+
+h1 {
+  text-align:center;
+  background-color:#0000ff;
+  color:#ffff00;
+  margin:0px;
+  padding:20px 0px;
+}
+
+h3 {
+  color:#ffff00;
+}
+
+hr {
+  height:6px;
+  width:100%;
+  color:#0000ff;
+  background-color:#0000ff;
+  border:1px solid #0000ff;
+  margin:20px 0px;
+}
+
+#red, #green, #yellow, #blue {
+  width:25%;
+  display:inline;
+  border:0px;
+  float:left;
+  text-align:center;
+  color: black;
+  font-size:larger;
+}
+
+#red {
+  background:#ff0000;
+}
+
+#green {
+  background:#00ff00;
+}
+
+#yellow {
+  background:#ffff00;
+}
+
+#blue {
+  background:#00ffff;
+}
+
+@media screen and (max-width: 850px) {
+  #header, #main, #footer {
+    width:100%;
+  }
+}
+
+
+a {
+  all: unset;
+}
+
+
+#article_box > h5{
+  color: #ff00ff;
+}
+#article_box > h2{
+  color: #00ffff;
+}
+#article_box > h4{
+  color: #ff0000;
+}
+
+
+.category{
+  color:#ff00ff;
+}
+
+
+/* some random foreground and background colours for the categories */
+
+.developmentalbiology{
+  background-color: #00ffff;
+  color:#ff00ff;
+  font-family: ttmono;
+}
+
+.cellbiology{
+  background-color: #ff00ff;
+  color:#00ffff;
+  font-family: pixtile;
+  /* font-size: large; */
+}
+
+.biophysics{
+  background-color: #ffff00;
+  color:#ff0000;
+  font-family: wayf;
+}
+
+.zoology{
+  background-color: #00ff00;
+  color:#0000ff;
+  font-family: ttmono;
+}
+
+.biochemistry{
+  background-color: #ff0000;
+  color:#ffff00;
+  font-family: pixtile;
+}
+
+.bioengineering{
+  background-color: #0000ff;
+  color:#00ff00;
+  /* font-family: wayf; */
+}
+
+.bioinformatics{
+  background-color: #00ffff;
+  color:#ff00ff;
+  font-family: pixtile;
+}
+
+.cancerbiology{
+  background-color: #ff00ff;
+  color:#00ffff;
+  font-family: wayf;
+}
+
+.ecology{
+  background-color: #ffff00;
+  color:#ff0000;
+  font-family: ttmono;
+}
+
+.evolutionarybiology{
+  background-color: #00ff00;
+  color:#0000ff;
+  font-family: pixtile;
+}
+
+.genetics{
+  background-color: #ff0000;
+  color:#ffff00;
+  font-family: wayf;
+}
+
+.genomics{
+  background-color: #0000ff;
+  color:#00ff00;
+  font-family: ttmono;
+}
+
+
+.immunology{
+  background-color: #00ffff;
+  color:#ff00ff;
+  font-family: pixtile;
+}
+
+
+.microbiology{
+  background-color: #ff00ff;
+  color:#00ffff;
+  font-family: wayf;
+}
+
+.neuroscience{
+  background-color: #ffff00;
+  color:#ff0000;
+  font-family: ttmono;
+}
+
+
+.pathology{
+  background-color: #ff0000;
+  color:#0000ff;
+  font-family: pixtile;
+}
+
+.plantbiology{
+  background-color: #00ff00;
+  color:#ffff00;
+  font-family: wayf;
+}
+
+.systemsbiology{
+  background-color: #0000ff;
+  color:#00ff00;
+  font-family: ttmono;
+}
+
+
+
+
+
